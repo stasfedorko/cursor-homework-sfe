@@ -3,9 +3,72 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SFE homework #0</title>
+	<link rel="stylesheet" href="00-test-homework.css">
 </head>
 <body>
-	
+	<section>
+		<ul>
+			<li>
+				git config --global user.name blabla <span>(Задати імя користувача)</span>
+			</li>
+			<li>
+				git config --global user.email blabal@bla <span>(Задати емейл користувача)</span>
+			</li>
+			<li>
+				git init <span>(створює папку .git в якій зберігаються файли репозиторія, зміни тощо)</span>
+			</li>
+			<li>
+				git status <span>(показує стан файлів в робочій папкі, які файли змінені і не добавлені або які очікують відправки)</span>
+			</li>
+			<li>
+				git add <span>(вибераються файли які будуть комітиться)</span>
+			</li>
+			<li>
+				git commit <span>(зберігає всі файли що ми вибрали в коміт)</span>
+			</li>
+			<li>
+				git log <span>(перегляд історії комітів)</span>
+			</li>
+			<li>
+				git checkout <span>(для переключення гілок та вигрузку в робочу папку)</span>
+			</li>
+			<li>
+				git branch <span>(керування гілками, створення, перегляд, видалити і тд)</span>
+			</li>
+			<li>
+				git push <span>(передача файлів "змін" на відділений репозиторій)</span>
+			</li>
+			<li>
+				git pull <span>(заберає зміни з віддаленого репозиторію)</span>
+			</li>
+			<li>
+				git merge <span>(злиття гілок)</span>
+			</li>
+			<li>
+				git clone <span>(команда використовується для клонування "копіювання" репо)</span>
+			</li>
+		</ul>
+
+		<p class="definition">.gitignore - <span>це файл в якому вказуються папки та файли які Git пропускає і не контролює "не відслідковує" їхні зміни.</span></p>
+
+		<ul>
+			<li>
+				git revert <span>(відміняє коміт, відкатує, створює новий коміт без змін)</span>
+			</li>
+			<li>
+				git reset <span>(відміняє зміни)</span>
+			</li>
+			<li>
+				git rebase <span>(обєднує зміни зроблені в одній гільці з іншою гілкою)</span>
+			</li>
+			<li>
+				git cherry-pick <span>(забрати коміти з однієї гілки в іншу)</span>
+			</li>
+			<li>
+				git stash <span>(ховає зміни в файлах і зберігає їх окремо, потім можна їх повернути)</span>
+			</li>
+		</ul>
+	</section>
 	<script src="00-test-homework.js"></script>
 </body>
 </html>

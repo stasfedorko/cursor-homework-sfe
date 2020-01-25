@@ -1,3 +1,9 @@
+body {
+	margin: 0;
+	padding: 0;
+	padding: 20px;
+}
+
 ul {
 	margin: 0px;
 	margin-bottom: 20px;
@@ -12,6 +18,11 @@ ul {
 ul span {
 	font-size: 14px;
 	color: #272727;
+}
+
+.title {
+	margin: 0;
+	margin-bottom: 20px;
 }
 
 .definition {

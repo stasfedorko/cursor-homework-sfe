@@ -49,20 +49,20 @@ console.log(studentsMarks);
 
 
 // 4. Поставьте каждой паре случайную оценку(от 1 до 5) за проект(тут функция будет нечистой, но не должна мутировать массив): [["Саша и Лена", "Теория автоматов", 5], [...], [...]]
-function getMarksForProject(studentPair) {
+function getMarksForProject(studentsWithThemes) {
   let pairsMarks = [];
-  let randomMarks;
-  for (i = 0; i < studentPair.length; i++) {
+	let randomMarks;
+  for (i = 0; i < studentsWithThemes.length; i++) {
 		function getRandomMarks(min, max) {
 			let randResult = min + Math.random() * (max + 1 - min);
 			return Math.floor(randResult);
 		}
     randomMarks = getRandomMarks(1, 5);
-    pairsMarks[i] = studentPair[i].concat(randomMarks);
-  }
+    pairsMarks[i] = studentsWithThemes[i].concat(randomMarks);
+	}
   return pairsMarks;
 }
-let projectMarks = getMarksForProject(studentPair);
+let projectMarks = getMarksForProject(studentsWithThemes);
 console.log(projectMarks);
 
 

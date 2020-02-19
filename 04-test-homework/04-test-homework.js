@@ -6,11 +6,11 @@ const MARKS = [4, 5, 5, 3, 4, 5];
 
 
 // 1. Разбейте студентов на пары(парень + девушка) для работы над проектом. У вас должен получиться вложенный массив с парами студентов: [["Саша", "Лена"], [..], [...]];
-function makePairs(STUDENTS) {
+function makePairs(item) {
 	const MAN_STUDENTS = ["Саша", "Игорь", "Алексей"];
 	const WOMEN_STUDENTS = ["Лена", "Ира", "Светлана"];
 	let studentPair = [];
-	for(let i = 0; i < Math.floor(STUDENTS.length / 2); i++){
+	for(let i = 0; i < Math.floor(item.length / 2); i++){
 		studentPair[i] = [MAN_STUDENTS[i], WOMEN_STUDENTS[i]]; 
 	}
 	return studentPair;
@@ -21,10 +21,10 @@ console.log(studentPair);
 
 
 // 2. Сопоставьте пары из предыдущего задания и темы проектов, над которым студенты будут работать. Должен получиться вложенный массив вида: [["Саша и Лена", "Теория автоматов"], [...], [...]]
-function giveTopic(studentPair, THEMES) {
+function giveTopic(item, item2) {
 	let studentsWithThemes = [];
 	for(let i = 0; i < Math.floor(STUDENTS.length / 2); i++){
-		studentsWithThemes[i] = [studentPair[i].join(' и '), THEMES[i]];
+		studentsWithThemes[i] = [item[i].join(' и '), item2[i]];
 	}
 	return studentsWithThemes;
 }
@@ -35,10 +35,10 @@ console.log(studentsWithThemes);
 
 
 // 3. Сопоставьте оценки(marks) со студентом(students): [["Саша", 4], [...], [...]]
-function giveMarksToSrudent(STUDENTS, MARKS) {
+function giveMarksToSrudent(item, item2) {
 	let studentsWithMarks = [];
-	for(let i = 0; i < STUDENTS.length; i++){
-		studentsWithMarks[i] = [STUDENTS[i], MARKS[i]]; 
+	for(let i = 0; i < item.length; i++){
+		studentsWithMarks[i] = [item[i], item2[i]]; 
 	}
 	return studentsWithMarks;
 }
@@ -49,16 +49,16 @@ console.log(studentsMarks);
 
 
 // 4. Поставьте каждой паре случайную оценку(от 1 до 5) за проект(тут функция будет нечистой, но не должна мутировать массив): [["Саша и Лена", "Теория автоматов", 5], [...], [...]]
-function getMarksForProject(studentsWithThemes) {
+function getMarksForProject(item) {
   let pairsMarks = [];
 	let randomMarks;
-  for (i = 0; i < studentsWithThemes.length; i++) {
+  for (i = 0; i < item.length; i++) {
 		function getRandomMarks(min, max) {
 			let randResult = min + Math.random() * (max + 1 - min);
 			return Math.floor(randResult);
 		}
     randomMarks = getRandomMarks(1, 5);
-    pairsMarks[i] = studentsWithThemes[i].concat(randomMarks);
+    pairsMarks[i] = item[i].concat(randomMarks);
 	}
   return pairsMarks;
 }

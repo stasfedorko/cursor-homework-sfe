@@ -72,6 +72,40 @@ console.log('get marks after dismiss =>', student1.getMarks);
 console.log('getAverageMark dismiss =>', student1.getAverageMark());
 console.log('-----');
 console.log('recover =>', student1.recover());
-console.log('set mark 1 =>', student1.setMarks = 1);
+console.log('set mark 2 =>', student1.setMarks = 2);
 console.log('get marks after dismiss =>', student1.getMarks);
 console.log('getAverageMark dismiss =>', student1.getAverageMark());
+
+
+
+// Advanced
+// 1. Создайте новый класс BudgetStudent, который полностью наследует класс Student
+// 2. Бюджетный студент может получать стипендию с помощью метода this.getScholarship. Получение стипендии сопровождается выводом информации в консоль: Вы получили 1400 грн. стипендии
+// 3. Метод получения стипендии автоматически вызывается каждые 30 секунд после создания объекта. Подсказка: вызывайте его в constructor
+// 4. Студент получает стипендию только в том случае, если средний балл у него выше или равен 4.0
+//Если студент исключен, он не получает стипендию (думаю это было и так очевидно :) )
+
+class BudgetStudent extends Student {
+  constructor(university, course, fullName) {
+    super(university, course, fullName);
+    if (parseFloat(this.getAverageMark()) > 4) {
+      setInterval(() => {
+        this.getScholarship();
+      }, 30000);
+    }
+  }
+  getScholarship() {
+    if (parseFloat(this.getAverageMark()) > 4){
+      return console.log("Вы получили 1400 грн. стипендии.");
+    } else if (this.marks === null || parseFloat(this.getAverageMark()) < 4) {
+      return console.log("Вы не получаете стипендию.");
+    }
+  }
+}
+
+console.log('-----');
+let student2 = new BudgetStudent("Rikosh", "Java", "Ivan Ivanov");
+console.log('getInfo student2 =>', student2.getInfo());
+console.log('get marks =>', student2.getMarks);
+console.log('getAverageMark =>', student2.getAverageMark());
+student2.getScholarship();

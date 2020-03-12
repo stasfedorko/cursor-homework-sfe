@@ -77,7 +77,9 @@ console.log('3.getStudentInfo =>', GET_STUDENT_INFO(STUDENTS[2]));
 let getStudentsNames = (item) => {
   let studentNameList = [];
   for(let i = 0; i < item.length; i++){
-    studentNameList.push(item[i].name);
+    // studentNameList.push(item[i].name);
+    studentNameList = [...studentNameList,item[i].name];
+    // studentNameList = item.map(j => j.name);
   }
   studentNameList = studentNameList.sort();
   return studentNameList;

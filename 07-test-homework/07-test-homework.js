@@ -30,13 +30,16 @@ console.log('3. getTotalTaxes.call(UKRAINE) => ', getTotalTaxes.call(UKRAINE));
 
 
 
+
 // 4. Создайте функцию getMySalary(country) – которая будет писать в консоль объект вида: { salary: number, taxes: number, profit: number } каждые 10 секунд. Значения salary – генерируйте случайным образом в диапазоне 1500-2000. taxes – расчитывается в зависимости от выбранной страны и значения salary. profit = salary - taxes;
 function getMySalary(country) {
   let mySalary = {};
   mySalary.salary = Math.floor(1500 + Math.random() * Math.floor(2000 - 1500));
-  mySalary.taxes = Math.floor(country.tax * mySalary.salary);
+  mySalary.taxes = Math.floor(this.tax * mySalary.salary);
   mySalary.profit = mySalary.salary - mySalary.taxes;
   return mySalary;
 }
-console.log('4. getMySalary (random every 10 sec) => ', getMySalary(LITVA));
-setInterval(() => console.log('4. getMySalary (random every 10 sec) => ', getMySalary(LITVA)), 10000);
+console.log('4. getMySalary (random every 10 sec) => ', getMySalary.call(LITVA));
+setInterval(() => console.log('4. getMySalary (random every 10 sec) => ', getMySalary.call(LITVA)), 10000);
+
+

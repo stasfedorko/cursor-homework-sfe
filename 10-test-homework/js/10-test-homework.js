@@ -1,23 +1,14 @@
 console.log("SFE homework #10");
 
 
-let soundBtn = document.getElementsByClassName("js-btn-toggle");
-// let soundBtn = document.getElementsById("button");
+document.addEventListener('keydown', function(event){
+  let keyButton = null;
+  keyButton = document.getElementById(event.code);
+  keyButton.classList.add('active');
+  setTimeout(function(){ keyButton.classList.remove('active'); }, 150);
 
-// console.dir(soundBtn); 
-
-soundBtn.onclick = function() {
-  console.log('click1');
-}
-
-soundBtn.getEventListeners('click', function() {
-  console.log('click2');
+  let audio = null;
+  audio = document.getElementById(`${event.code}-audio`);
+  audio.currentTime = 0;
+  audio.play();
 });
-
-
-
-
-// function toggleFunc() {
-//   let element = document.getElementsByClassName("js-btn-toggle");
-//   element.classList.toggle("active");
-// }

@@ -63,37 +63,40 @@ console.log(`FONT_GENERATOR.next('down').value -> `, FONT_GENERATOR.next('down')
 
 
 
-//----------
-let fontSize = 14;
-let bodyFontSize = fontSize + "px";
-let fontSizeUp = document.getElementById('fontSizeUp');
-let fontSizeDown = document.getElementById('fontSizeDown');
-let genFontSize = null;
-let refreshFontSize = null;
-console.log('bodyFontSize', bodyFontSize);
 
 
 
-function* pageFontGenerator(font) {
-  while(true) {
-    let value = yield font;
-    if(value === 'up') font += 2
-    else if(value === 'down') font -= 2;
-  }
-}
-
-genFontSize = pageFontGenerator(fontSize);
-
-fontSizeUp.addEventListener('click', function() {
-  genFontSize.next('up').value;
-  // console.log(genFontSize);
-});
-fontSizeDown.addEventListener('click', function() {
-  genFontSize.next('down').value;
-  // console.log(genFontSize);
-});
 
 
 
-refreshFontSize = document.getElementById("body").style.fontSize = bodyFontSize;
+
+// //----------
+// let fontSize = 14;
+// let bodyFontSize = fontSize + "px";
+// let fontSizeUp = document.getElementById('fontSizeUp');
+// let fontSizeDown = document.getElementById('fontSizeDown');
+// let genFontSize = null;
+// let refreshFontSize = null;
+// console.log('bodyFontSize', bodyFontSize);
+
+// function* pageFontGenerator(font) {
+//   while(true) {
+//     let value = yield font;
+//     if(value === 'up') font += 2
+//     else if(value === 'down') font -= 2;
+//   }
+// }
+
+// fontSizeUp.addEventListener('click', function() {
+//   genFontSize = pageFontGenerator(fontSize);
+//   genFontSize.next('up').value;
+//   // console.log(genFontSize);
+// });
+// fontSizeDown.addEventListener('click', function() {
+//   genFontSize = pageFontGenerator(fontSize);
+//   genFontSize.next('down').value;
+//   // console.log(genFontSize);
+// });
+
+// refreshFontSize = document.getElementById("body").style.fontSize = bodyFontSize;
 

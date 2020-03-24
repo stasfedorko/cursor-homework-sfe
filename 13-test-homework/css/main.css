@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #f2f2f2;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+section {
+	padding: 50px 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-white {
+	color: #fff !important;
+}
+
+.mt-0 {
+	margin-bottom: 0px !important;
+}
+
+.mb-0 {
+	margin-bottom: 0px !important;
+}
+
+.mb-20 {
+	margin-bottom: 20px !important;
+}
+
+.mb-30 {
+	margin-bottom: 30px !important;
+}
+
+.mb-40 {
+	margin-bottom: 40px !important;
+}
+
+

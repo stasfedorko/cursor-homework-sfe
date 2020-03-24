@@ -65,10 +65,11 @@ console.log(`FONT_GENERATOR.next('down').value -> `, FONT_GENERATOR.next('down')
 
 //----------
 let fontSize = 14;
-let bodyFontSize = document.getElementById("body").style.fontSize = fontSize + "px";
+let bodyFontSize = fontSize + "px";
 let fontSizeUp = document.getElementById('fontSizeUp');
 let fontSizeDown = document.getElementById('fontSizeDown');
 let genFontSize = null;
+let refreshFontSize = null;
 console.log('bodyFontSize', bodyFontSize);
 
 
@@ -82,19 +83,17 @@ function* pageFontGenerator(font) {
 }
 
 genFontSize = pageFontGenerator(fontSize);
-// genFontSize.next('up').value;
-// genFontSize.next('up').value;
-console.log('genFontSize', genFontSize);
 
 fontSizeUp.addEventListener('click', function() {
   genFontSize.next('up').value;
-  bodyFontSize = document.getElementById("body").style.fontSize = fontSize + "px";
+  // console.log(genFontSize);
 });
 fontSizeDown.addEventListener('click', function() {
   genFontSize.next('down').value;
-  bodyFontSize = document.getElementById("body").style.fontSize = fontSize + "px";
+  // console.log(genFontSize);
 });
 
 
 
-// bodyFontSize = document.getElementById("body").style.fontSize = fontSize + "px";
+refreshFontSize = document.getElementById("body").style.fontSize = bodyFontSize;
+

@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.Post {
+  background-color: #2d3852;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 15px;
+  margin-bottom: 20px;
+  color: #fff;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+}
+
+.Post-account {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-right: 15px;
+  background-color: #8e8d8d;
+  z-index: 1;
+}
+
+.Post-account::before {
+  content: "\f207";
+  display: inline-block;
+  font-family: "Material-Design-Iconic-Font";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 36px;
+  z-index: 2;
+}
+
+.Post-account-img {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.Post-content {
+  width: 100%;
+}
+
+.Post-content-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.Post-title {
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-right: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 160px;
+  text-overflow: ellipsis;
+  position: relative;
+  padding-right: 20px;
+}
+
+.Post-title i {
+  color: #fff;
+  margin-left: 5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.Post-info {
+  font-weight: 400;
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+  display: inline-block;
+}
+
+.Post-delimiter {
+  position: relative;
+  padding: 9px 9px;
+  display: inline-block;
+}
+
+.Post-delimiter::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.Post-hide-link {
+  display: inline-block;
+  color: rgba(255,255,255,0.5);
+  line-height: 16px;
+  padding: 0 5px;
+  margin-right: -5px;
+  margin-left: auto;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.Post-hide-link:hover {
+  color: rgba(255,255,255,1);
+}
+
+.Post-hide-link i {
+  font-size: 22px;
+  line-height: inherit;
+}
+
+.Post-content-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.Post-content-image {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-size: 0;
+}
+
+.Post-attached-image {
+  width: 100%;
+}
+
+.Post-content-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+.Post-footer-link {
+  display: inline-block;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.Post-footer-link:hover {
+  color: rgba(255,255,255,1);
+}
+
+.Post-footer-link {
+
+}
+
+.Post-footer-link i {
+  margin-right: 8px;
+}
+
+.Post-footer-link:last-child {
+  margin-right: 42px;
+}
+
+
+
+
+
+

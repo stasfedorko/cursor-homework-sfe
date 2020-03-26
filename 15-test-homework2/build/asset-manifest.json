@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/stasfedorko/homework--15-reactjs/static/css/main.4124717e.chunk.css",
+    "main.js": "/stasfedorko/homework--15-reactjs/static/js/main.7342d78e.chunk.js",
+    "main.js.map": "/stasfedorko/homework--15-reactjs/static/js/main.7342d78e.chunk.js.map",
+    "runtime-main.js": "/stasfedorko/homework--15-reactjs/static/js/runtime-main.5c3766c8.js",
+    "runtime-main.js.map": "/stasfedorko/homework--15-reactjs/static/js/runtime-main.5c3766c8.js.map",
+    "static/js/2.a430f49c.chunk.js": "/stasfedorko/homework--15-reactjs/static/js/2.a430f49c.chunk.js",
+    "static/js/2.a430f49c.chunk.js.map": "/stasfedorko/homework--15-reactjs/static/js/2.a430f49c.chunk.js.map",
+    "index.html": "/stasfedorko/homework--15-reactjs/index.html",
+    "precache-manifest.60a1df12c556891e52f55072b7e7d3d2.js": "/stasfedorko/homework--15-reactjs/precache-manifest.60a1df12c556891e52f55072b7e7d3d2.js",
+    "service-worker.js": "/stasfedorko/homework--15-reactjs/service-worker.js",
+    "static/css/main.4124717e.chunk.css.map": "/stasfedorko/homework--15-reactjs/static/css/main.4124717e.chunk.css.map",
+    "static/js/2.a430f49c.chunk.js.LICENSE.txt": "/stasfedorko/homework--15-reactjs/static/js/2.a430f49c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/stasfedorko/homework--15-reactjs/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c3766c8.js",
+    "static/js/2.a430f49c.chunk.js",
+    "static/css/main.4124717e.chunk.css",
+    "static/js/main.7342d78e.chunk.js"
+  ]
+}

@@ -107,6 +107,10 @@ p {
 	overflow: hidden;
 }
 
+.sound-btn:hover {
+	cursor: pointer;
+}
+
 .sound-btn span {
 	display: inline-block;
 	transition: all .15s ease;

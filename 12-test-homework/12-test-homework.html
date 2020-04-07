@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SFE homework #12</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<section>
+    <div class="container">
+      <h1 class="text-center text-yellow text-shadow mb-40">Домашнее задание по теме Работа с сервером</h1>
+		</div>
+		<!-- container -->
+  </section>
+
+  <section class="film-info-section">
+		<div class="container">
+      <div class="btn-planet-container">
+          <button id="prev" type="button" disabled>prev</button>
+          <button id="next" type="button">next</button>
+      </div>
+      <div class="planets-container"></div>
+    </div>
+		<!-- container -->
+	</section>
+  
+  <section class="film-info-section">
+		<div class="container">
+      <div class="text-center mb-40">
+        <select name="select" id="moviePart"> 
+          <option value="" selected>select movie part</option>
+          <option value="1">1</option> 
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+        <button id="button" type="button">get movie info</button>
+      </div>
+      <div class="card-container"></div>
+    </div>
+		<!-- container -->
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
